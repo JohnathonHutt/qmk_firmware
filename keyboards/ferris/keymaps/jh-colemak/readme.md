@@ -1,6 +1,8 @@
 # My 34 keys layout
 
-*COPIED FROM DALIUSD - SWAPPED OUT MY COLEMAK CONFIG
+***I don't remember what the state of these ferris sweep configs are I believe it was largely a copy paste from my adux config.
+
+COPIED FROM DALIUSD - SWAPPED OUT MY COLEMAK CONFIG
 
 Principles for layout (from DALIUSD):
 
@@ -23,9 +25,8 @@ shot keys.
 There is simple TMUX layer as well.
 
 
-Notes: Not sure how trilayer state works - giving it a shot, will revert to
+Notes: Not sure how trilayer state works - giving it a dhot, will revert to
 previous layer approach if not
-
 
 *My stuff:
 
