@@ -122,7 +122,7 @@ const uint32_t PROGMEM unicode_map[] = {
 #define K_LT_OB     X(LT_OB)
 #define K_LT_CB     X(LT_CB)
 
-const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {km,.''
+const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_COLEMAK] = LAYOUT_split_3x5_2(
   //┌────────┬────────┬────────┬────────┬────────┐                         ┌────────┬────────┬────────┬────────┬────────┐
@@ -132,11 +132,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {km,.''
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
      KC_Z    ,KC_X    ,KC_C    ,KC_V    ,KC_B                               ,KC_K   ,KC_M    ,KC_COMM  ,KC_DOT ,KC_QUOT,
   //└────────┴────────┴────────┴────┬───┴────┬───┼────────┐       ┌────────┼───┬────┴───┬────┴────────┴────────┴────────┘
-                                ALL_T(KC_SPC) ,    L_SYM  ,         L_NAV,       KC_RSFT,
+                                    KC_SPC ,    L_SYM  ,         L_NAV,       KC_RSFT
   //                                └────────┘   └────────┘       └────────┘   └────────┘
   ),
 
-  [_SYM] = LAYOUT_split_3x5_2(^)}]`
+  [_SYM] = LAYOUT_split_3x5_2(
   //┌────────┬────────┬────────┬────────┬────────┐                         ┌────────┬────────┬────────┬────────┬────────┐
      KC_ESC ,KC_LBRC   ,KC_LCBR ,KC_LPRN  ,KC_TILD                         ,KC_CIRC ,KC_RPRN  ,KC_RCBR  ,KC_RBRC ,KC_GRV,
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
@@ -154,7 +154,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {km,.''
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
      OS_SFT  ,OS_CTRL ,OS_ALT  ,OS_GUI  ,SNEK                              ,KC_LEFT  ,KC_DOWN ,KC_UP  ,KC_RGHT ,KC_BSPC,
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
-     KC_NO    ,KC_NO   ,KC_NO   ,KC_NO   ,KC_NO                            ,KC_MS_LEFT,KC_MS_DOW,KC_MS_UP,KC_MS_RIGHT,KC_ENT,
+     KC_NO    ,KC_NO   ,KC_NO   ,KC_NO   ,KC_NO                            ,KC_MS_LEFT,KC_MS_DOWN,KC_MS_UP,KC_MS_RIGHT,KC_ENT,
   //└────────┴────────┴────────┴────┬───┴────┬───┼────────┐       ┌────────┼───┬────┴───┬────┴────────┴────────┴────────┘
                                      _______ ,     _______ ,        _______ ,    _______
   //                                └────────┘   └────────┘       └────────┘   └────────┘
