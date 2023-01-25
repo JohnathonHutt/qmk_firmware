@@ -122,27 +122,27 @@ const uint32_t PROGMEM unicode_map[] = {
 #define K_LT_OB     X(LT_OB)
 #define K_LT_CB     X(LT_CB)
 
-const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {km,.''
 
   [_COLEMAK] = LAYOUT_split_3x5_2(
   //┌────────┬────────┬────────┬────────┬────────┐                         ┌────────┬────────┬────────┬────────┬────────┐
-     KC_Q    ,KC_W    ,KC_F    ,KC_P    ,KC_G,                              KC_SCLN    ,KC_Y    ,KC_U    ,KC_L    ,KC_J    ,
+     KC_Q    ,KC_W    ,KC_F    ,KC_P    ,KC_G                               ,KC_J   ,KC_L    ,KC_U    ,KC_Y    ,KC_SCLN,
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
-     KC_A    ,KC_R    ,KC_S    ,KC_T    ,KC_D    ,                          KC_O    ,KC_I    ,KC_E    ,KC_N    ,KC_H ,
+     KC_A    ,KC_R    ,KC_S    ,KC_T    ,KC_D                               ,KC_H   ,KC_N    ,KC_E    ,KC_I    ,KC_O,
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
-     KC_Z    ,KC_X    ,KC_C    ,KC_V    ,KC_B    ,                          KC_QUOT    ,KC_DOT    ,KC_COMM ,KC_M  ,KC_K,
+     KC_Z    ,KC_X    ,KC_C    ,KC_V    ,KC_B                               ,KC_K   ,KC_M    ,KC_COMM  ,KC_DOT ,KC_QUOT,
   //└────────┴────────┴────────┴────┬───┴────┬───┼────────┐       ┌────────┼───┬────┴───┬────┴────────┴────────┴────────┘
-                                ALL_T(KC_SPC) ,    L_SYM  ,         KC_RSFT,     L_NAV
+                                ALL_T(KC_SPC) ,    L_SYM  ,         L_NAV,       KC_RSFT,
   //                                └────────┘   └────────┘       └────────┘   └────────┘
   ),
 
-  [_SYM] = LAYOUT_split_3x5_2(
+  [_SYM] = LAYOUT_split_3x5_2(^)}]`
   //┌────────┬────────┬────────┬────────┬────────┐                         ┌────────┬────────┬────────┬────────┬────────┐
-     KC_ESC ,KC_LBRC   ,KC_LCBR ,KC_LPRN  ,KC_TILD ,                          KC_GRV ,KC_RBRC ,KC_RCBR ,KC_RPRN ,KC_CIRC ,
+     KC_ESC ,KC_LBRC   ,KC_LCBR ,KC_LPRN  ,KC_TILD                         ,KC_CIRC ,KC_RPRN  ,KC_RCBR  ,KC_RBRC ,KC_GRV,
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
-     KC_UNDS  ,KC_ASTR ,KC_EQL ,KC_MINS ,KC_DLR ,                          OS_SFT ,OS_CTRL  ,OS_ALT ,OS_GUI  ,KC_HASH ,
+     KC_UNDS  ,KC_ASTR ,KC_EQL ,KC_MINS ,KC_DLR                            ,KC_HASH  ,OS_GUI  ,OS_ALT  ,OS_CTRL ,OS_SFT,
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
-     KC_PIPE  ,KC_PLUS  ,KC_AT ,KC_SLSH ,KC_PERC ,                          KC_AMPR ,KC_BSLS ,KC_EXLM  ,KC_QUES  ,KC_MINS ,
+     KC_PIPE  ,KC_PLUS  ,KC_AT ,KC_SLSH ,KC_PERC                           ,KC_MINS  ,KC_QUES ,KC_EXLM ,KC_BSLS ,KC_AMPR,
   //└────────┴────────┴────────┴────┬───┴────┬───┼────────┐       ┌────────┼───┬────┴───┬────┴────────┴────────┴────────┘
                                      _______ ,    _______ ,        _______ ,    _______
   //                                └────────┘   └────────┘       └────────┘   └────────┘
@@ -150,11 +150,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_NAV] = LAYOUT_split_3x5_2(
   //┌────────┬────────┬────────┬────────┬────────┐                         ┌────────┬────────┬────────┬────────┬────────┐
-     KC_ESC   ,KC_TAB  ,KC_NO   ,KC_NO  ,KC_NO ,                             KC_DEL   ,KC_NO  ,KC_BTN2 ,KC_BTN1 ,KC_NO,
+     KC_ESC   ,KC_TAB  ,KC_NO   ,KC_NO  ,KC_NO                             ,KC_NO   ,KC_BTN1 ,KC_BTN2 ,KC_NO   ,KC_DEL,
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
-     OS_SFT  ,OS_CTRL ,OS_ALT  ,OS_GUI  ,SNEK  ,                          KC_BSPC ,KC_RGHT  ,KC_UP   ,KC_DOWN,KC_LEFT,
+     OS_SFT  ,OS_CTRL ,OS_ALT  ,OS_GUI  ,SNEK                              ,KC_LEFT  ,KC_DOWN ,KC_UP  ,KC_RGHT ,KC_BSPC,
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
-     KC_NO    ,KC_NO   ,KC_NO   ,KC_NO   ,KC_NO ,                           KC_ENT  ,KC_PGDN   ,KC_PGUP  ,KC_END  ,KC_HOME,
+     KC_NO    ,KC_NO   ,KC_NO   ,KC_NO   ,KC_NO                            ,KC_MS_LEFT,KC_MS_DOW,KC_MS_UP,KC_MS_RIGHT,KC_ENT,
   //└────────┴────────┴────────┴────┬───┴────┬───┼────────┐       ┌────────┼───┬────┴───┬────┴────────┴────────┴────────┘
                                      _______ ,     _______ ,        _______ ,    _______
   //                                └────────┘   └────────┘       └────────┘   └────────┘
@@ -162,11 +162,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_NUMB] = LAYOUT_split_3x5_2(
   //┌────────┬────────┬────────┬────────┬────────┐                         ┌────────┬────────┬────────┬────────┬────────┐
-     KC_7    ,KC_5    ,KC_3    ,KC_1    ,KC_9    ,                          KC_6    ,KC_4    ,KC_2    ,KC_0    ,KC_8 ,
+     KC_7    ,KC_5    ,KC_3    ,KC_1    ,KC_9                              ,KC_8   ,KC_0    ,KC_2    ,KC_4    ,KC_6,
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
-  OSM(MOD_LSFT) ,OS_CTRL ,OS_ALT  ,OS_GUI  ,KC_NO    ,                  OSM(MOD_LSFT) ,OS_CTRL ,OS_ALT  ,OS_GUI  ,KC_F10    ,
+     OS_SFT ,OS_CTRL ,OS_ALT  ,OS_GUI  ,KC_NO                              ,KC_F10  ,OS_GUI  ,OS_ALT  ,OS_CTRL ,OS_SFT,
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
-     KC_F7   ,KC_F5   ,KC_F3   ,KC_F1   ,KC_F9 ,                            KC_F6   ,KC_F4   ,KC_F2   ,KC_F12  ,KC_F8 ,
+     KC_F7   ,KC_F5   ,KC_F3   ,KC_F1   ,KC_F9                             ,KC_F8    ,KC_F12   ,KC_F2   ,KC_F4   ,KC_F6,
   //└────────┴────────┴────────┴────┬───┴────┬───┼────────┐       ┌────────┼───┬────┴───┬────┴────────┴────────┴────────┘
                                      _______ ,    _______ ,        _______ ,    _______
   //                                └────────┘   └────────┘       └────────┘   └────────┘
